@@ -1,4 +1,4 @@
-package com.vytrack.utilities;
+package com.automation.utilities;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;

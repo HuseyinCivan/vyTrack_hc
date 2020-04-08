@@ -1,5 +1,5 @@
 
-package com.vytrack.utilities;
+package com.automation.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -36,7 +36,7 @@ public class Driver {
                     driver = new ChromeDriver();
                     break;
 
-                case "chromeHeadless":
+                case "chromeheadless":
                     WebDriverManager.chromedriver().version("79").setup();
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
@@ -46,7 +46,7 @@ public class Driver {
                     driver = new FirefoxDriver();
                     break;
 
-                case "firefoxHeadless":
+                case "firefoxheadless":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver(new FirefoxOptions().setHeadless(true));
                     break;
